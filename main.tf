@@ -24,6 +24,8 @@ variable "parameter" {
     #common env
     { name = "jenkins_password", value = "Canada1991$", type = "SecureString" },
     { name = "artifactory_username", value = "admin", type = "String" },
-    { name = "artifactory_password", value = "Canada1991$", type = "SecureString" }
+    { name = "artifactory_password", value = "Canada1991$", type = "SecureString" },
+    { name = "ssh_username", value = "centos", type = "String" },
+    { name = "ssh_password", value = "DevOps321", type = "SecureString" }
   ]
 }
