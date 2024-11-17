@@ -28,5 +28,13 @@ variable "parameter" {
     { name = "artifactory_password", value = "Canada1991$", type = "SecureString" },
     { name = "ssh_username", value = "centos", type = "String" },
     { name = "ssh_password", value = "DevOps321", type = "SecureString" }
+
+    ##RoboShop Project Parameters DEV environment
+    {name = "dev.roboshop.frontend.catalogue_url", value = "http://catalogue-dev.aligntune.online/", type = "String" },
+    {name = "dev.roboshop.frontend.user_url", value = "http://user-dev.aligntune.online/", type = "String" },
+    {name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.aligntune.online/", type = "String" },
+    {name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.aligntune.online/", type = "String" },
+    {name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.aligntune.online/", type = "String" }
+
   ]
 }
