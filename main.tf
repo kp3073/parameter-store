@@ -38,10 +38,7 @@ variable "parameter" {
 
     #Catalogue parameter
 
-    {
-      name  = "dev.roboshop.catalogue.mongodb_url",
-      value = "mongodb://mongodb-dev.aligntune.online:27017/catalogue", type = "String"
-    },
+    { name = "dev.roboshop.catalogue.mongodb_url", value = "mongodb://mongodb-dev.aligntune.online:27017/catalogue", type = "String" },
     { name = "dev.roboshop.catalogue.mongodb_ENDPOINT", value = "mongodb-dev.aligntune.online", type = "String" }
 
   ]
