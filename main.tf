@@ -42,7 +42,13 @@ variable "parameter" {
       name = "dev.roboshop.catalogue.MONGO_URL", value = "mongodb://mongodb-dev.aligntune.online:27017/catalogue",
       type = "String"
     },
-    { name = "dev.roboshop.catalogue.mongodb_ENDPOINT", value = "mongodb-dev.aligntune.online", type = "String" }
+    { name = "dev.roboshop.catalogue.mongodb_ENDPOINT", value = "mongodb-dev.aligntune.online", type = "String" },
 
+    #user Parameter
+    { name = "dev.roboshop.user.REDIS_HOST", value = "redis-dev.aligntune.online", type = "String" },
+    {
+      name = "dev.roboshop.user.MONGO_URL", value = "mongodb://mongodb-dev.aligntune.online:27017/users",
+      type = "String"
+    }
   ]
 }
