@@ -1,5 +1,5 @@
 resource "aws_ssm_parameter" "parameter" {
-  count = length(var.parameter)
+  count     = length(var.parameter)
   name      = var.parameter[count.index].name
   type      = var.parameter[count.index].type
   value     = var.parameter[count.index].value
@@ -34,7 +34,15 @@ variable "parameter" {
     { name = "dev.roboshop.frontend.user_url", value = "http://user-dev.aligntune.online/", type = "String" },
     { name = "dev.roboshop.frontend.cart_url", value = "http://cart-dev.aligntune.online/", type = "String" },
     { name = "dev.roboshop.frontend.shipping_url", value = "http://shipping-dev.aligntune.online/", type = "String" },
-    { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.aligntune.online/", type = "String" }
+    { name = "dev.roboshop.frontend.payment_url", value = "http://payment-dev.aligntune.online/", type = "String" },
+
+    #Catalogue parameter
+
+    {
+      name  = "dev.roboshop.catalogue.mongodb_url",
+      value = "mongodb://http://mongodb-dev.aligntune.online:27017/catalogue", type = "String"
+    },
+    { name = "dev.roboshop.catalogue.mongodb_ENDPOINT", value = "mongodb-dev.aligntune.online/", type = "String" }
 
   ]
 }
