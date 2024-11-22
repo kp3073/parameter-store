@@ -56,6 +56,21 @@ variable "parameter" {
     {
       name = "dev.roboshop.user.MONGO_URL", value = "mongodb://mongodb-dev.aligntune.online:27017/users",
       type = "String"
-    }
+    },
+
+    # Cart parameter
+    { name = "dev.roboshop.cart.REDIS_HOST", value = "redis-dev.aligntune.online", type = "String" },
+    { name = "dev.roboshop.cart.CATALOGUE_HOST", value = "catalogue-dev.aligntune.online", type = "String" },
+    { name = "dev.roboshop.cart.CATALOGUE_port", value = "8080", type = "String" },
+
+    #Password parameter
+    { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
+
+    #Shipping parameter
+    { name = "dev.roboshop.shipping.DB_HOST", value = "mysql-dev.aligntune.online", type = "String" },
+    { name = "dev.roboshop.shipping.MYSQL_USERNAME", value = "root", type = "String" },
+    { name = "dev.roboshop.shipping.MYSQL_USERNAME", value = "mysql-dev.aligntune.online", type = "String" },
+    { name = "dev.roboshop.shipping.CART_ENDPOINT", value = "cart:80", type = "String" }
+
   ]
 }
