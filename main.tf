@@ -65,6 +65,8 @@ variable "parameter" {
 
     #Password parameter
     { name = "dev.roboshop.mysql.DB_PASS", value = "RoboShop@1", type = "SecureString" },
+    { name = "dev.roboshop.rabbitmq.MQ_PASS", value = "roboshop123", type = "SecureString" },
+
 
     #Shipping parameter
     { name = "dev.roboshop.shipping.DB_HOST", value = "mysql-dev.aligntune.online", type = "String" },
