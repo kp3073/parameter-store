@@ -1,5 +1,5 @@
 resource "aws_ssm_parameter" "parameter" {
-  count = length(var.parameter)
+  count     = length(var.parameter)
   name      = var.parameter[count.index].name
   type      = var.parameter[count.index].type
   value     = var.parameter[count.index].value
@@ -68,7 +68,7 @@ variable "parameter" {
 
     #Shipping parameter
     { name = "dev.roboshop.shipping.DB_HOST", value = "mysql-dev.aligntune.online", type = "String" },
-    { name = "dev.roboshop.shipping.MYSQL_USERNAME", value = "root", type = "String" },
+    { name = "dev.roboshop.shipping.DB_USERNAME", value = "root", type = "String" },
     { name = "dev.roboshop.shipping.CART_ENDPOINT", value = "cart:80", type = "String" }
 
   ]
