@@ -1,5 +1,5 @@
 resource "aws_ssm_parameter" "parameter" {
-  count     = length(var.parameter)
+  count = length(var.parameter)
   name      = var.parameter[count.index].name
   type      = var.parameter[count.index].type
   value     = var.parameter[count.index].value
@@ -73,6 +73,8 @@ variable "parameter" {
     { name = "dev.roboshop.shipping.DB_HOST", value = "mysql-dev.aligntune.online", type = "String" },
     { name = "dev.roboshop.shipping.DB_USERNAME", value = "root", type = "String" },
     { name = "dev.roboshop.shipping.CART_ENDPOINT", value = "cart:80", type = "String" },
+    { name = "dev.roboshop.shipping.CART_Server", value = "cart-dev.aligntune.online:8080", type = "String" },
+
 
     #payment Parameter and Dispatch using Same parameters
     { name = "dev.roboshop.payment.CART_HOST", value = "cart-dev.aligntune.online", type = "String" },
