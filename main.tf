@@ -80,8 +80,7 @@ variable "parameter" {
 	{ name = "dev.roboshop.payment.CART_HOST", value = "cart-dev.aligntune.online", type = "String" },
 	{ name = "dev.roboshop.payment.USER_HOST", value = "user-dev.aligntune.online", type = "String" },
 	{ name = "dev.roboshop.payment.AMQP_HOST", value = "rabbitmq-dev.aligntune.online", type = "String" },
-	{ name = "dev.roboshop.payment.AMQP_USER", value = "roboshop", type = "String" },
+	{ name = "dev.roboshop.payment.AMQP_USER", value = "roboshop", type = "String" }
 	##misceallaneous
-	{ name = "grefana.aligntune.online", value = "172.31.34.46", type = "String" }
   ]
 }
